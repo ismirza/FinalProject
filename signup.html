@@ -2,14 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="mystyle.css"/>
+  <link rel="stylesheet" href="css/signup.css"/>
   <script src="myscripts.js"></script>
 </head>
 
 <body>
-  <div class="header">
-    <h1>Here lets have a good background image and have a reflective box with our logo</h1>
-  </div>
+
 
   <div class="topnav">
     <a href="home.html">Home</a>
@@ -17,55 +15,45 @@
     <a href="menu.html">Menu</a>
     <a href="Company Profile.html">About</a>
     <a href="signup.html">Sign Up</a>
-
   </div>
-  <h2>Sign Up for more deals!</h2>
-  <form>
-      First name:<br>
-        <input type="text" name="firstname"
-          onFocus="this.style.backgroundColor = 'green';"
-          onBlur="this.style.backgroundColor = 'white';">
-    <br>
-      Last name:<br>
-        <input type="text" name="lastname"
-          onFocus="this.style.backgroundColor = 'green';"
-          onBlur="this.style.backgroundColor = 'white';">
-    <br>
-      Email:<br>
-        <input type="text" name="email"
-          onFocus="this.style.backgroundColor = 'green';"
-          onBlur="this.style.backgroundColor = 'white';">
-    <br>
-      City:<br>
-          <input type="text" name="City"
-            onFocus="this.style.backgroundColor = 'green';"
-            onBlur="this.style.backgroundColor = 'white';">
-    <br>
-      State:<br>
-        <input type="text" name="State"
-            onFocus="this.style.backgroundColor = 'green';"
-            onBlur="this.style.backgroundColor = 'white';">
-    <br>
-      ZIP:<br>
-          <input type="text" name="Zip"
-            onFocus="this.style.backgroundColor = 'green';"
-            onBlur="this.style.backgroundColor = 'white';">
-    <br>
-      Location:<br>
-            <input type="text" name="Location"
-            onFocus="this.style.backgroundColor = 'green';"
-            onBlur="this.style.backgroundColor = 'white';">
-          <br>
-  <br>
-      <input type="button" value="Submit" onClick="alert('You have succesfully submitted')"
+  <div class="container">
+	<header>
+		<h1>
+			<a href="#">
 
-
-  </form>
-
-
-  <div class="footer">
-
-  <p>All rights reserved&copy</p>
+			</a>
+		</h1>
+	</header>
+	<h1 class="text-center">Register</h1>
+	<form class="registration-form">
+		<label class="col-one-half">
+			<span class="label-text">First Name</span>
+			<input type="text" name="firstName">
+		</label>
+		<label class="col-one-half">
+			<span class="label-text">Last Name</span>
+			<input type="text" name="lastName">
+		</label>
+		<label>
+			<span class="label-text">Email</span>
+			<input type="text" name="email">
+		</label>
+		<label class="password">
+			<span class="label-text">Password</span>
+			<button class="toggle-visibility" title="toggle password visibility" tabindex="-1">
+				<span class="glyphicon glyphicon-eye-close"></span>
+			</button>
+			<input type="password" name="password">
+		</label>
+		<label class="checkbox">
+			<input type="checkbox" name="newsletter">
+			<span>Sign me up for the weekly newsletter.</span>
+		</label>
+		<div class="text-center">
+			<button class="submit" name="register">Sign Me Up</button>
+		</div>
+	</form>
 </div>
+
 </body>
 </html>
