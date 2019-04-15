@@ -1,3 +1,184 @@
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 15px;
+  text-align: center;
+}
+
+table.company {
+  width: 500px;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0px 15px;
+  font-size: 12px;
+}
+
+table.company th,
+table.company td {
+  padding: 10px;
+}
+
+table.company th {
+  background: #295890;
+  vertical-align: middle;
+  text-align: left;
+  width: 100px;
+  overflow: visible;
+  position: relative;
+  color: #fff;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+table.company th:after {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-left-color: #295890;
+  border-width: 10px;
+  margin-top: -10px;
+}
+
+/* firefox */
+@-moz-document url-prefix() {
+  table.company th::after {
+    float: right;
+    padding: 0;
+    left: 30px;
+    top: 10px;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: relative;
+    pointer-events: none;
+    border: 10px solid transparent;
+    border-left: #295890 10px solid;
+    margin-top: -10px;
+  }
+}
+
+body {
+  font-family: 'Libre+Baskerville', serif;
+  font-size: 24px;
+}
+
+body {
+  background-image: url("Photos/sausage.jpg");
+  background-size: cover;
+}
+
+#Company Profile{
+     background-color:#FFFFFF;
+     filter:alpha(opacity=85);
+     -moz-opacity:0.85;
+     -khtml-opacity: 0.85;
+     opacity:0.85;
+}
+
+h1 {
+  position: relative;
+  padding: 0.6em;
+  background: #e0edff;
+}
+
+.demo   {
+    background: url(images/bg1.gif);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.opacity    {
+    background: #333;
+    padding: 10px;
+    border: 5px solid #000;
+    color: #fff;
+    opacity: 0.6;
+}
+
+span {
+   background-color: rgba( 255, 255, 255 );
+   color: white
+ }
+
+  h1:after {
+
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 30px;
+  border: 15px solid transparent;
+  border-top: 15px solid #e0edff;
+  width: 0;
+  height: 0;
+}
+
+
+
 table.company {
 width: 500px;
 margin: 0 auto;
@@ -12,7 +193,7 @@ padding: 10px;
 }
 
 table.company th {
-background: #295890;
+background: #FE2E2E;
 vertical-align: middle;
 text-align: left;
 width: 100px;
@@ -32,8 +213,8 @@ height: 0;
 width: 0;
 position: absolute;
 pointer-events: none;
-border-color: rgba(136, 183, 213, 0);
-border-left-color: #295890;
+border-color: rgba(255, 0, 0, 0);
+border-left-color: #FE2E2E;
 border-width: 10px;
 margin-top: -10px;
 }
@@ -50,7 +231,7 @@ width: 0;
 position: relative;
 pointer-events: none;
 border: 10px solid transparent;
-border-left: #295890 10px solid;
+border-left: #FE2E2E 10px solid;
 margin-top: -10px;
 }
 }

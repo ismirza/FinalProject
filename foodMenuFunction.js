@@ -3,26 +3,19 @@
 
   switch (day) {
     case 0:
-    document.write("It's Sunday, I have class tomorrow.");
-    break;
+    document.write("Sunday Special: Half Off Hot Dogs");
     case 1:
-    document.write("It's Monday, I have three classes today.");
-    break;
+    document.write("Monday Special: Buy One Get One Free");
     case 2:
-    document.write("It's Tuesday, I only have one class today.");
-    break;
+    document.write("Tuesday Special: 20% Off Third Sausage");
     case 3:
-    document.write("It's Wednesday, I have three classes today.");
-    break;
+    document.write("Wednesday Special: Free Delivery");
     case 4:
-    document.write("It's Thursday, I have work but no classes.");
-    break;
+    document.write("Thursday Special: Buy One Get One 50% Off");
     case 5:
-    document.write("It's Friday, I have work but no classes.");
-    break;
+    document.write("Friday Special: 10% Off Catering");
     case 6:
-    document.write("It's Saturday, I have off today.");
-    break;
+    document.write("Saturday Special: Three Free Samples With Your Order");
   }
 
 

@@ -182,43 +182,4 @@ body {
 	line-height: 30px;
 	font-family: 'Rokkitt', serif;
 	font-size: 14pt;
-
-}
-
-input,
-textarea {
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-  margin: 0;
-  outline: none;
-  padding: 10px;
-	background-color: #bfbfbf;
-
-}
-
-.input-group .quantity-field {
-  position: relative;
-  height: 38px;
-  left: -6px;
-  text-align: center;
-  width: 62px;
-  display: inline-block;
-  font-size: 13px;
-  margin: 0 0 5px;
-  resize: vertical;
-}
-
-#input-group {
-  box-sizing: border-box;
-	display: flex;
-	align-items: center;
-	margin-top: -5px;
-  width: 20px;
-  float: left;
-}
-
-#txtNumber {
-	width: 50px;
-	background-color: white;
-	text-align: center;
 }

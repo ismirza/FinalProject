@@ -1,0 +1,428 @@
+/*SOCIAL MEADIA ICONS FOR SIGNUP PAGE*/
+.social-icons {
+  text-align: center;
+  }
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+.social-icons li img {
+  width:70px;
+  height:70px;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 15px;
+  text-align: center;
+}
+
+table.company {
+  width: 500px;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0px 15px;
+  font-size: 12px;
+}
+
+table.company th,
+table.company td {
+  padding: 10px;
+}
+
+table.company th {
+  background: #295890;
+  vertical-align: middle;
+  text-align: left;
+  width: 100px;
+  overflow: visible;
+  position: relative;
+  color: #fff;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+table.company th:after {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-left-color: #295890;
+  border-width: 10px;
+  margin-top: -10px;
+}
+
+/* firefox */
+@-moz-document url-prefix() {
+  table.company th::after {
+    float: right;
+    padding: 0;
+    left: 30px;
+    top: 10px;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: relative;
+    pointer-events: none;
+    border: 10px solid transparent;
+    border-left: #295890 10px solid;
+    margin-top: -10px;
+  }
+}
+
+table.company td {
+  background: #f8f8f8;
+  width: 360px;
+  padding-left: 20px;
+}
+
+/* for the sign up page */
+@import url(https://fonts.googleapis.com/css?family=Cookie|Raleway:300,700,400);
+
+* {
+  box-sizing: border-box;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(images/signupback.jpg) center no-repeat;
+  background-size: cover;
+  color: #333;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  border-radius: 0.5em;
+  box-shadow: 0 0 1em 0 rgba(51, 51, 51, 0.25);
+  display: block;
+  max-width: 480px;
+  overflow: hidden;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 98%;
+}
+
+.container:before {
+  background: center no-repeat;
+  background-size: cover;
+  content: '';
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100vw;
+}
+
+.container:after {
+  background: rgba(255, 255, 255, 0.6);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+form button.submit {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid #333;
+  line-height: 1em;
+  padding: 0.5em 0.5em;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+form button:hover,
+form button:focus,
+form button:active,
+form button.loading {
+  background: #333;
+  color: #fff;
+  outline: none;
+}
+
+form button.success {
+  background: #27ae60;
+  border-color: #27ae60;
+  color: #fff;
+}
+
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+form button span.loading-spinner {
+  -webkit-animation: spin 0.5s linear infinite;
+  animation: spin 0.5s linear infinite;
+  border: 2px solid #fff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+}
+
+form label {
+  border-bottom: 1px solid #333;
+  display: block;
+  font-size: 1.25em;
+  margin-bottom: 0.5em;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+form label.col-one-half {
+  float: left;
+  width: 50%;
+}
+
+form label.col-one-half:nth-of-type(even) {
+  border-left: 1px solid #333;
+  padding-left: 0.25em;
+}
+
+form label input {
+  background: none;
+  border: none;
+  line-height: 1em;
+  font-weight: 300;
+  padding: 0.125em 0.25em;
+  width: 100%;
+}
+
+form label input:focus {
+  outline: none;
+}
+
+form label input:-webkit-autofill {
+  background-color: transparent !important;
+}
+
+form label span.label-text {
+  display: block;
+  font-size: 0.5em;
+  font-weight: bold;
+  padding-left: 0.5em;
+  text-transform: uppercase;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+form label.checkbox {
+  border-bottom: 0;
+  text-align: center;
+}
+
+form label.checkbox input {
+  display: none;
+}
+
+form label.checkbox span {
+  font-size: 0.5em;
+}
+
+form label.checkbox span:before {
+  content: '\e157';
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-size: 1.125em;
+  padding-right: 0.25em;
+  position: relative;
+  top: 1px;
+}
+
+form label.checkbox input:checked+span:before {
+  content: '\e067';
+}
+
+form label.invalid {
+  border-color: #c0392b !important;
+}
+
+form label.invalid span.label-text {
+  color: #c0392b;
+}
+
+form label.password {
+  position: relative;
+}
+
+form label.password button.toggle-visibility {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.75em;
+  line-height: 1em;
+  position: absolute;
+  top: 50%;
+  right: 0.5em;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+form label.password button.toggle-visibility:hover,
+form label.password button.toggle-visibility:focus,
+form label.password button.toggle-visibility:active {
+  color: #000;
+  outline: none;
+}
+
+form label.password button.toggle-visibility span {
+  vertical-align: middle;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0 0 0.2em 0;
+  text-align: center;
+  font-family: 'Cookie', cursive;
+}
+
+h1 img {
+  height: auto;
+  margin: 0 auto;
+  max-width: 240px;
+  width: 100%;
+}
+
+html {
+  font-size: 18px;
+  height: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+body {
+    background-image:    url(PhotosOriginalSizing/ChorizoDark.jpg);
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+img {
+  width: 35%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px; 
+}
