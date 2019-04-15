@@ -39,7 +39,7 @@ formValidation = {
       firstName: false,
       lastName: false,
       email: false,
-      password: false
+      password: false,
     };
 
     this.bindEvents();
